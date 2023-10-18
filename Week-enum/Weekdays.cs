@@ -8,7 +8,7 @@ namespace Week_enum
 {
     internal enum Weekdays
     {
-        Monday,
+        Monday =1,
         Tuesday,
         Wednesday,
         Thursday,

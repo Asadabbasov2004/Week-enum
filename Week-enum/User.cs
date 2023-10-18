@@ -10,7 +10,23 @@ namespace Week_enum
     {
         public string Name{ get; set; }
         public string Surname{ get; set; }
-        public Weekdays BirthDay { get; set; }
+        Weekdays _birthday;
+        public Weekdays BirthDay
+        {
+            get { return _birthday; }
+            set
+            {
+                if (value > 0 && (int)value < 8)
+                {
+                   _birthday=value;
+                }
+                else
+                {
+                    Console.WriteLine("olmaz");
+                }
+            }
+        }
+            
 
         public User(string Name ,string Surname , Weekdays BirthDay)
         {

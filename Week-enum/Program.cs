@@ -18,7 +18,7 @@ namespace Week_enum
             Console.WriteLine("please enter your birtday");
             int birthday=Convert.ToInt32( Console.ReadLine());
             User user = new User(name, surname, days[birthday-1]);
-
+            Console.WriteLine(user.BirthDay);
         }
     }
 }
